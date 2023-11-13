@@ -33,7 +33,7 @@ public class CameraService {
         return cameraDtoList;
     }
 
-    private CameraDto cameraToCameraDto(Camera camera) {
+    CameraDto cameraToCameraDto(Camera camera) {
         CameraDto dto = new CameraDto();
         dto.setId(camera.getId());
         dto.setUrlType(camera.getSourceDataUrl().getUrlType());
